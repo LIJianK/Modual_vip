@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="lj" location="10,165" size="770,245">
+    <action name="findRecharge" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="recharge.jsp" />
+      </result>
+    </action>
+    <action name="recharge" location="0,0" size="0,0" />
+    <action name="reportTheLoss" location="0,0" size="0,0" />
+    <action name="thaw" location="0,0" size="0,0" />
+    <action name="enableCard" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="enableCard.jsp" />
+      </result>
+    </action>
+    <action name="updatEnableCard" location="0,0" size="0,0" />
+    <action name="cancellation" location="0,0" size="0,0" />
+    <action name="findSingleCard" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="findSingleResult.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="345,465" size="150,55" />
+  <webResource name="fail.jsp" path="/fail.jsp" location="590,10" size="150,55" />
+  <webResource name="success.jsp" path="/success.jsp" location="0,0" size="0,0" />
+  <webResource name="enableCard.jsp" path="/enableCard.jsp" location="0,0" size="0,0" />
+  <webResource name="enableCard.jsp" path="/card/enableCard.jsp" location="0,0" size="0,0" />
+  <webResource name="recharge.jsp" path="/card/recharge.jsp" location="0,0" size="0,0" />
+  <webResource name="findSingleResult.jsp" path="/card/findSingleResult.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

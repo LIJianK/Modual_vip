@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="lj" namespace="/" extends="vip">
+    
+   		<action name="findRecharge" class="com.pro.actions.FindOfActiveAction" method="findOfActive">
+    		<result name="success">/card/recharge.jsp</result>
+    	</action>
+    	
+    	<action name="recharge" class="com.pro.actions.CardAction" method="recharge">
+    	
+    	</action>
+    	
+    	<action name="reportTheLoss" class="com.pro.actions.ReportTheLossCardAction" method="reportTheLoss">
+    	
+    	</action>
+    	
+    	<action name="thaw" class="com.pro.actions.ThawAction" method="thaw">
+    	
+    	</action>
+    	
+    	<action name="enableCard" class="com.pro.actions.EnableCardAction" method="enableCard">
+    		<result name="success">/card/enableCard.jsp</result>
+    	</action>
+    	
+    	<action name="updatEnableCard" class="com.pro.actions.UpdatEnableCardAction" method="updatEnableCard">
+    	
+    	</action>
+    	
+    	<action name="cancellation" class="com.pro.actions.CancellationAction" method="cancellation">
+    	
+    	</action>
+    	
+    	<action name="findSingleCard" class="com.pro.actions.FindSingleCardAction" method="findSingleCard">
+    		<result name="success">/card/findSingleResult.jsp</result>
+    	</action>
+    	
+    	<action name="findAllCard" class="com.pro.actions.FindAllCardAction" method="findAllCard">
+    		<result name="success">/card/findAllResult.jsp</result>
+    	</action>
+    </package>
+</struts>
